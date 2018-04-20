@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function refine_pub(){
     var authors_arr = document.getElementsByClassName("pub-authors");
     for (i = 0; i < authors_arr.length; i++) {
         var authors = authors_arr[i].children;
@@ -12,7 +12,7 @@ $(document).ready(function(){
                 $(authors[j]).before(' and ');
         }
     }
-    
+
     var pub_items = document.getElementsByClassName("pub-item");
     var prev_item_year = -1;
     for (i = 0; i < pub_items.length; i++) {
@@ -23,4 +23,5 @@ $(document).ready(function(){
             prev_item_year = parseInt(pub_item.getAttribute("year"));
         }
     }
-});
+}
+$( document ).ready(function(){refine_pub();});
