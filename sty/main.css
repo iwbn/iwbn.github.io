@@ -1,0 +1,40 @@
+
+main {
+    max-width: 800px;
+    margin: 0em auto 1em auto;
+    padding: 0;
+    
+}
+
+header {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+header.namecard {
+    background-image: url('../img/small_from_e3.jpg');
+    background-position:center;
+    background-repeat: none;
+    background-color: skyblue;
+    background-size: cover;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: 1px 1px 1px #009900;
+}
+
+header.namecard p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+header.namecard a {
+    color: rgb(225,235,255);
+}

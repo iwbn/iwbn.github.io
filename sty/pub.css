@@ -1,0 +1,24 @@
+.pub {
+    padding:0;
+    text-align: left;
+}
+
+.pub-item {
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    border-left: 3px solid skyblue;
+}
+
+.pub-title {
+    font-weight: bold;
+}
+
+.pub-journal {
+    font-style: italic;
+}
+
+.pub-year {
+    font-size: 1.4em;
+    padding-bottom: -1em;
+}
