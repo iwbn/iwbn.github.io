@@ -19,22 +19,46 @@ p {
 }
 
 header.namecard {
-    background-image: url('../img/small_from_e3.jpg');
+    /**background-image: url('../img/small_from_e3.jpg');**/
     background-position:center;
     background-repeat: none;
-    background-color: skyblue;
+    /**background-color: skyblue;**/
     background-size: cover;
+	background: rgb(29,164,166);
+	background: -moz-linear-gradient(0deg, rgba(29,164,166,1) 0%, rgba(220,222,44,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(29,164,166,1) 0%, rgba(220,222,44,1) 100%);
+	background: linear-gradient(0deg, rgba(29,164,166,1) 0%, rgba(220,222,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1da4a6",endColorstr="#dcde2c",GradientType=1);
     color: white;
     padding-left: 10%;
     padding-right: 10%;
     text-shadow: 1px 1px 1px #009900;
+	width:100%;
+}
+
+header.namecard h1 {
+	display:block;
+	text-align: center;
 }
 
 header.namecard p {
     margin-bottom: 5px;
-    text-align: left;
+    text-align: center;
+}
+
+header.namecard address {
+    text-align: center;
 }
 
 header.namecard a {
     color: rgb(225,235,255);
+}
+
+#profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

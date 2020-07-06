@@ -12,13 +12,20 @@
 
 .pub-title {
     font-weight: bold;
+	clear: both;
 }
 
 .pub-journal {
     font-style: italic;
+	clear: both;
 }
 
 .pub-year {
     font-size: 1.4em;
     padding-bottom: -1em;
+}
+
+.pub-misc {
+    clear: both;
+    display: block;
 }
