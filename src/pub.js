@@ -16,12 +16,18 @@ function refine_pub(){
     var pub_items = document.getElementsByClassName("pub-item");
     var prev_item_year = -1;
     for (i = 0; i < pub_items.length; i++) {
-        pub_item = pub_items[i];
-        this_year = parseInt(pub_item.getAttribute("year"));
+        var pub_item = pub_items[i];
+        var this_year = parseInt(pub_item.getAttribute("year"));
         if (this_year != prev_item_year){
             $(pub_item).before('<span class="pub-year">'+this_year.toString()+'</span>');
-            prev_item_year = parseInt(pub_item.getAttribute("year"));
+            var prev_item_year = parseInt(pub_item.getAttribute("year"));
         }
     }
+	
+	var a_items = document.getElementsByTagName("a");
+	for (i = 0; i < a_items.length; i++) {
+		var item = a_items[i];
+		item.setAttribute("target", "_blank");
+	}
 }
 $( document ).ready(function(){refine_pub();});
