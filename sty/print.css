@@ -54,3 +54,7 @@ header.namecard a {
 .button-print {
 	display: none;
 }
+
+.only-print {
+	display: inherit;
+}
