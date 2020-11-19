@@ -40,11 +40,11 @@ $( window ).resize(function() {
 	refine_navbar();
 });
 
-var prev_navbar_item = null;
+var prev_navbar_item = $("#top");
 
 $(window).on('scroll', function() {
 	var nava = $("#navbar a");
-	var current_item = nava.first();
+	var current_item = $(nava.first());
 
 	nava.each(function (i, v) {
 		var id = $(v).attr("href");
@@ -56,10 +56,12 @@ $(window).on('scroll', function() {
 		}
 		current_item = $(v);
 	});
+	
 	nava.css("font-weight", "normal");
-	if (prev_navbar_item !== current_item){
+	current_item.css("font-weight", "bold");
+	
+	if (prev_navbar_item[0] != current_item[0]){
 		prev_navbar_item = current_item;
-		current_item.css("font-weight", "bold");
 		$('#navbar').stop();
 		$('#navbar').animate({
 			scrollLeft: $('#navbar').scrollLeft() + current_item.offset().left - $('#navbar').width()/2 + current_item.width()/2
