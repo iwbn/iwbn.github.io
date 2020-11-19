@@ -6,6 +6,10 @@ body {
 	padding: 25mm 25mm 25mm 25mm;
 }
 
+#navbar {
+	display: none;
+}
+
 .namecard-wrapper {
 	background: none;
 }
