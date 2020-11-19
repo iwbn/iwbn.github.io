@@ -18,8 +18,8 @@ p {
     text-align: justify;
 }
 
-header.namecard {
-    /**background-image: url('../img/small_from_e3.jpg');**/
+.namecard-wrapper {
+	/**background-image: url('../img/small_from_e3.jpg');**/
     background-position:center;
     background-repeat: none;
     /**background-color: skyblue;**/
@@ -29,11 +29,20 @@ header.namecard {
 	background: -webkit-linear-gradient(0deg, rgba(29,164,166,1) 0%, rgba(220,222,44,1) 100%);
 	background: linear-gradient(0deg, rgba(29,164,166,1) 0%, rgba(220,222,44,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1da4a6",endColorstr="#dcde2c",GradientType=1);
+	position: relative;
+	padding: 0;
+	width:100%;
+}
+
+header.namecard {
+    
     color: white;
     padding-left: 10%;
     padding-right: 10%;
     text-shadow: 1px 1px 1px #009900;
-	width:100%;
+	max-width: 800px;
+    margin: 0em auto 1em auto;
+    padding: 1em;
 	position: relative;
 }
 
@@ -66,7 +75,7 @@ header.namecard a {
 
 .button-print {
 	position: absolute;
-	right: 10%;
+	right: 1em;
 	font-size: 1em;
 	background: none;
 	border: none;

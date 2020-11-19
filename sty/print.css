@@ -6,6 +6,10 @@ body {
 	padding: 25mm 25mm 25mm 25mm;
 }
 
+.namecard-wrapper {
+	background: none;
+}
+
 header.namecard {
 	background: none;
 	color: black;
