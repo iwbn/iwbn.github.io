@@ -34,6 +34,7 @@ header.namecard {
     padding-right: 10%;
     text-shadow: 1px 1px 1px #009900;
 	width:100%;
+	position: relative;
 }
 
 header.namecard h1 {
@@ -61,4 +62,13 @@ header.namecard a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.button-print {
+	position: absolute;
+	right: 10%;
+	font-size: 1em;
+	background: none;
+	border: none;
+	color: #007BFF;
 }
