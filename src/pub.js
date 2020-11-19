@@ -1,5 +1,5 @@
 function refine_pub(){
-	var author_info_list = document.getElementsByClassName("pub-author-info-list")[0].children;
+	var author_info_list = document.getElementsByClassName("pub-author-info-list")[0].children[1].children;
 	var author_infos = [];
 	for (i = 0; i < author_info_list.length; i++) {
 		var item = author_info_list[i];
