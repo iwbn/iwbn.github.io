@@ -62,7 +62,6 @@ $(window).on('scroll', function() {
 	
 	if (prev_navbar_item[0] != current_item[0]){
 		prev_navbar_item = current_item;
-		$('#navbar').stop();
 		$('#navbar').animate({
 			scrollLeft: $('#navbar').scrollLeft() + current_item.offset().left - $('#navbar').width()/2 + current_item.width()/2
 		}, 500);
