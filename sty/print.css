@@ -58,3 +58,7 @@ header.namecard a {
 .only-print {
 	display: inherit;
 }
+
+.print-dont-break {
+	break-inside: avoid;
+}

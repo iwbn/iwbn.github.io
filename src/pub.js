@@ -30,7 +30,9 @@ function refine_pub(){
         var pub_item = pub_items[i];
         var this_year = parseInt(pub_item.getAttribute("year"));
         if (this_year != prev_item_year){
-            $(pub_item).before('<span class="pub-year">'+this_year.toString()+'</span>');
+			$(pub_item).wrap('<div class="print-dont-break"></div>');
+			var year_item = $('<span class="pub-year">'+this_year.toString()+'</span>');
+            $(pub_item).before(year_item);
             var prev_item_year = parseInt(pub_item.getAttribute("year"));
         }
     }
