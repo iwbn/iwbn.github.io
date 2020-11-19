@@ -35,14 +35,13 @@ p {
 }
 
 header.namecard {
-    
     color: white;
     padding-left: 10%;
     padding-right: 10%;
     text-shadow: 1px 1px 1px #009900;
 	max-width: 800px;
     margin: 0em auto 1em auto;
-    padding: 1em;
+    padding: 50px 1em 1em 1em;
 	position: relative;
 }
 
