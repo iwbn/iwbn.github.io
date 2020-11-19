@@ -37,3 +37,9 @@
 .pub-author-info-list {
 	display: none;
 }
+
+@media (prefers-color-scheme: dark) {
+	.pub-item {
+		border-left-color: #ff9d24;
+	}
+}
