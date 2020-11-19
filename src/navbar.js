@@ -1,4 +1,4 @@
-var navbar_mode = -1;
+var navbar_margin = 70;
 
 function define_navbar(){
 	var navbar = $("#navbar");
@@ -11,8 +11,8 @@ function define_navbar(){
 			var id = title.replace(" ", "_").toLowerCase();
 			$(v).attr("id", id);
 			$(v).css({
-				"padding-top": "40px", 
-				"margin-top": "-40px"
+				"padding-top": navbar_margin + "px", 
+				"margin-top": -navbar_margin + "px"
 			});
 			navbar.append($('<a href="#' + id + '">' + title + "</a>"));
 		}
@@ -50,19 +50,20 @@ $(window).on('scroll', function() {
 		var id = $(v).attr("href");
 		var targ = $(id);
 		
-		var offset = $(window).scrollTop() - targ.offset().top;
+		var offset = $(window).scrollTop() - targ.offset().top + navbar_margin;
 		if (offset <= 0){
 			return false;
 		}
 		current_item = $(v);
 	});
 	nava.css("font-weight", "normal");
-	if (prev_navbar_item != current_item){
+	if (prev_navbar_item !== current_item){
 		prev_navbar_item = current_item;
 		current_item.css("font-weight", "bold");
+		$('#navbar').stop();
 		$('#navbar').animate({
 			scrollLeft: $('#navbar').scrollLeft() + current_item.offset().left - $('#navbar').width()/2 + current_item.width()/2
-		}, 100);
+		}, 500);
 	}
 });
 
