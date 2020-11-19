@@ -1,16 +1,44 @@
 #navbar {
+	position: fixed;
+	z-index: 10;
+	height: 30px;
+	transition: height .5s;
+	background-color: rgba(1.,1.,1.,0.5);
 	width: 100%;
 	overflow: scroll;
 	white-space: nowrap;
 	text-align: center;
+	-webkit-backdrop-filter: saturate(140%) blur(10px);
+	backdrop-filter: saturate(140%) blur(10px);
 }
 
 #navbar a {
 	overflow:hidden;
-	background-color:grey;
-	transition: height .5s;
-	height: 1em;
+	color: black;
+	transition: line-height .5s;
+	line-height: 30px;
+	margin: 0.5em 1em 0.5em 1em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
+	#navbar {
+		height: 60px;
+	}
+	
+	#navbar a {
+		line-height: 60px;
+	}
+	
+	header.namecard {
+		padding-top: 80px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	#navbar {
+		background-color: rgba(0,0,0,0.5);
+	}
+	#navbar a {
+		color: white;
+	}
 }
