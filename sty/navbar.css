@@ -6,10 +6,16 @@
 	background-color: rgba(1.,1.,1.,0.5);
 	width: 100%;
 	overflow: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 	white-space: nowrap;
 	text-align: center;
 	-webkit-backdrop-filter: saturate(140%) blur(10px);
 	backdrop-filter: saturate(140%) blur(10px);
+}
+
+#navbar::-webkit-scrollbar {
+  display: none;
 }
 
 #navbar a {
