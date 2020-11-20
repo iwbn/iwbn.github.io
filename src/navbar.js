@@ -45,12 +45,16 @@ function refine_navbar(){
 $( document ).ready(function(){
 	define_navbar();
 	$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-	}, 300);
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 300);
 	});
+	var hash = $(location).attr('hash');
+	if (hash.length > 0){
+		console.log(hash);
+		document.getElementById(hash.replace("#","")).scrollIntoView();
+	}
 });
 
 $( window ).resize(function() {
