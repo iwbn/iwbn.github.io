@@ -1,4 +1,5 @@
-var navbar_margin = 70;
+var navbar_margin = 40;
+var navbar_mode_threshold = 700;
 
 function define_navbar(){
 	var navbar = $("#navbar");
@@ -10,18 +11,34 @@ function define_navbar(){
 			var title = v.innerHTML;
 			var id = title.replace(" ", "_").toLowerCase();
 			$(v).attr("id", id);
-			$(v).css({
-				"padding-top": navbar_margin + "px", 
-				"margin-top": -navbar_margin + "px"
-			});
 			navbar.append($('<a href="#' + id + '">' + title + "</a>"));
 		}
 	});
+	
+	refine_navbar();
 }
 
 function refine_navbar(){
 	var navbar = $("#navbar");
 	var nava = $("#navbar a");
+	
+	if ($(window).width() <= 700) {
+		navbar_margin = 70;
+		
+	}
+	else {
+		navbar_margin = 40;
+	}
+	
+	var all_h3 = $("h3");
+	all_h3.each(function (i, v) {
+		if ($(v).parent().css('display') != 'none') {
+			$(v).css({
+				"padding-top": navbar_margin + "px", 
+				"margin-top": - navbar_margin + "px"
+			});
+		}
+	});
 }
 
 
@@ -32,8 +49,8 @@ $( document ).ready(function(){
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
+	}, 500);
+	});
 });
 
 $( window ).resize(function() {
