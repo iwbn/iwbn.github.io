@@ -51,7 +51,7 @@ $( document ).ready(function(){
 		}, 300);
 	});
 	var hash = $(location).attr('hash');
-	if (hash.length > 0){
+	if (hash.length > 0 && performance.navigation.type != performance.navigation.TYPE_RELOAD){
 		console.log(hash);
 		document.getElementById(hash.replace("#","")).scrollIntoView();
 	}
