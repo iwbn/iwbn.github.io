@@ -27,6 +27,10 @@ nav a {
 	display: none !important;
 }
 
+.only-on-print {
+	display: inherit;
+}
+
 .namecard-wrapper {
 	background: none;
 }
