@@ -10,6 +10,14 @@ header {
     padding: 20px;
 }
 
+footer {
+	max-width: 800px;
+    margin: 5em auto 0em auto;
+    padding: 20px;
+	text-align: right;
+	color: grey;
+}
+
 section {
     padding: 20px;
 }
@@ -81,7 +89,7 @@ header.namecard a {
 	color: #007BFF;
 }
 
-.only-print {
+.only-on-print {
 	display: none;
 }
 

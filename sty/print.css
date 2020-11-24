@@ -6,8 +6,25 @@ body {
 	padding: 25mm 25mm 25mm 25mm;
 }
 
-#navbar {
-	display: none;
+nav {
+	position: relative !important;
+	margin-bottom: 2em !important;
+	border-bottom: 1px solid grey !important;
+	white-space: normal !important;
+	display: table !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+
+nav a {
+	position: relative;
+	float: left;
+	text-decoration: underline !important;
+	white-space: nowrap !important;
+}
+
+.not-on-print {
+	display: none !important;
 }
 
 .namecard-wrapper {

@@ -18,34 +18,36 @@
 	
 	<title>Woobin Im</title>
 </head>
-<body id="top">
-<nav id="navbar">
+<body>
+<nav id="navbar" class="not-on-print">
 </nav>
+
 <div class="namecard-wrapper">
-<header class="namecard">
-<button onclick="window.print()" class="button-print">🖨️</button>
-<img id="profile-img" src="img/profile.jpg" alt="profile image" width="300" height="300">
-<h1>Woobin Im</h1>
-<div class="only-print">
-<p>Korean name: 임우빈</p>
+	<header class="namecard">
+		<button onclick="window.print()" class="button-print">🖨️</button>
+		<img id="profile-img" src="img/profile.jpg" alt="profile image" width="300" height="300">
+		<h1>Woobin Im</h1>
+		<div class="only-on-print">
+		<p>Korean name: 임우빈</p>
+		</div>
+		<p>Ph.D. student at <br>
+		<a href="https://www.kaist.ac.kr">
+		Korea Advanced Institute of Science and Technology (KAIST)
+		</a></p>
+		<p><a href="https://sgvr.kaist.ac.kr">SGVR Lab.</a></p>
+		<address>
+		email: <a href="mailto:iwbn@kaist.ac.kr">iwbn@kaist.ac.kr</a>
+		<div class="only-on-print">
+		website: <a href="https://iwbn.github.io/">https://iwbn.github.io/</a>
+		</div>
+		</address>
+		<p>Research interest: computer vision, deep learning, optical flow, and video analysis.</p>
+	</header>
 </div>
-<p>Ph.D. student at <br>
-<a href="https://www.kaist.ac.kr">
-Korea Advanced Institute of Science and Technology (KAIST)
-</a></p>
-<p><a href="https://sgvr.kaist.ac.kr">SGVR Lab.</a></p>
-<address>
-email: <a href="mailto:iwbn@kaist.ac.kr">iwbn@kaist.ac.kr</a>
-<div class="only-print">
-website: <a href="https://iwbn.github.io/">https://iwbn.github.io/</a>
-</div>
-</address>
-<p>Research interest: computer vision, deep learning, optical flow, and video analysis.</p>
-</header>
-</div>
+
 <main>
 <section>
-<h3>About Me</h3>
+<h3 class="navbar-anchor">About Me</h3>
 <p> I'm a Ph.D. student at KAIST, South Korea. 
 I'm interested in various topics of 
 computer vision and general artificial intelligence
@@ -53,7 +55,7 @@ including <b>optical flow</b>,
 <b>face recognition</b>, <b>deep learining</b>, 
 and <b>un-/semi-supervised learning</b>.</p>
 
-<h3>Education</h3>
+<h3 class="navbar-anchor">Education</h3>
 <ul>
 <li>KAIST, Ph.D., Computer Science, 2018-current</li>
 <li>KAIST, M.S., Computer Science, 2016-2018</li>
@@ -61,8 +63,9 @@ and <b>un-/semi-supervised learning</b>.</p>
 </ul>
 <!--h3>Research Interests</h3-->
 </section>
+
 <section>
-<h3>Publications</h3>
+<h3 class="navbar-anchor">Publications</h3>
 <ul class="pub">
 <li class="pub-item" year="2020">
 	<span class="pub-title">Unsupervised Learning of Optical Flow with Deep Feature Similarity</span>
@@ -265,7 +268,7 @@ and <b>un-/semi-supervised learning</b>.</p>
 </section>
 
 <section>
-<h3>Patents</h3>
+<h3 class="navbar-anchor">Patents</h3>
 <ul>
 <li>Using Triplet-based Loss for Training Ordinal Classification Deep Models 
 <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019231105&tab=PCTBIBLIO">[detail]</a></li>
@@ -300,7 +303,7 @@ Lab website renovation, Dec 2019 (<a href="https://sgvr.kaist.ac.kr">sgvr.kaist.
 </li>
 </ul>
 
-<h3>Experiences</h3>
+<h3 class="navbar-anchor">Experiences</h3>
 <ul>
 	<li>Teaching Assistants
 		<ul>
@@ -337,5 +340,8 @@ Lab website renovation, Dec 2019 (<a href="https://sgvr.kaist.ac.kr">sgvr.kaist.
 </ul>
 </section>
 </main>
+<footer>
+Template available at <a href="https://github.com/iwbn/iwbn.github.io">github</a>
+</footer>
 </body>
 </html>

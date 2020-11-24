@@ -3,10 +3,14 @@ var navbar_mode_threshold = 700;
 
 function define_navbar(){
 	var navbar = $("#navbar");
-	var all_h3 = $("h3");
-	navbar.append($('<a href="#top">🏠</a>'));
+	var all_anchors = $(".navbar-anchor");
+	var top_elem = $('<div id="navbar-top"></div>');
 	
-	all_h3.each(function (i, v) {
+	$("body").first().prepend(top_elem);
+	
+	navbar.append($('<a href="#navbar-top">🏠</a>'));
+	
+	all_anchors.each(function (i, v) {
 		if ($(v).parent().css('display') != 'none') {
 			var title = v.innerHTML;
 			var id = title.replace(" ", "_").toLowerCase();
