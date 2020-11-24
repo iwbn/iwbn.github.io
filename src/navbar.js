@@ -61,7 +61,7 @@ $( window ).resize(function() {
 	refine_navbar();
 });
 
-var prev_navbar_item = $("#top");
+var isScrolling;
 
 $(window).on('scroll', function() {
 	var nava = $("#navbar a");
@@ -81,12 +81,18 @@ $(window).on('scroll', function() {
 	nava.css("font-weight", "normal");
 	current_item.css("font-weight", "bold");
 	
-	if (prev_navbar_item[0] != current_item[0]){
-		prev_navbar_item = current_item;
+	//https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
 		$('#navbar').stop();
-		$('#navbar').delay( 500 ).animate({
+		$('#navbar').animate({
 			scrollLeft: $('#navbar').scrollLeft() + current_item.offset().left - $('#navbar').width()/2 + current_item.width()/2
-		}, 500);
-	}
+		}, 600);
+
+	}, 100);
+	
 });
 
