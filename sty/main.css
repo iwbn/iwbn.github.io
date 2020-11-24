@@ -18,6 +18,11 @@ footer {
 	color: grey;
 }
 
+footer p{
+	text-align: right;
+	margin-bottom: 0.1em;
+}
+
 section {
     padding: 20px;
 }
