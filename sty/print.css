@@ -46,7 +46,12 @@ header.namecard {
 	padding: 20px;
 }
 
-header.namecard h1 {
+header.namecard h1,
+header.namecard h2, 
+header.namecard h3,
+header.namecard h4, 
+header.namecard h5, 
+header.namecard h6 {
 	display:block;
 	text-align: justify;
 }
@@ -90,4 +95,8 @@ header.namecard a {
 
 .print-dont-break {
 	break-inside: avoid;
+}
+
+#navbar-padding-bottom {
+    display: none;
 }
