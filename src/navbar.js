@@ -15,9 +15,13 @@ function define_navbar(){
 			var title = v.innerHTML;
 			var id = title.replace(" ", "_").toLowerCase();
 			$(v).attr("id", id);
+			$(v).attr("navbar-initial-margin-top", $(v).css('margin-top'));
+			$(v).attr("navbar-initial-padding-top", $(v).css('padding-top'));
 			navbar.append($('<a href="#' + id + '">' + title + "</a>"));
 		}
 	});
+
+	$("body").first().append($('<div id="navbar-padding-bottom"></div>'));
 	
 	refine_navbar();
 }
@@ -26,7 +30,7 @@ function refine_navbar(){
 	var navbar = $("#navbar");
 	var nava = $("#navbar a");
 	
-	if ($(window).width() <= 700) {
+	if ($(window).width() <= navbar_mode_threshold) {
 		navbar_margin = 70;
 		
 	}
@@ -34,14 +38,18 @@ function refine_navbar(){
 		navbar_margin = 40;
 	}
 	
-	var all_h3 = $("h3");
-	all_h3.each(function (i, v) {
+	var all_anchors = $(".navbar-anchor");
+	all_anchors.each(function (i, v) {
 		if ($(v).parent().css('display') != 'none') {
 			$(v).css({
-				"padding-top": navbar_margin + "px", 
-				"margin-top": - navbar_margin + "px"
+				"padding-top": parseInt($(v).attr("navbar-initial-padding-top")) + navbar_margin + "px",
+				"margin-top": parseInt($(v).attr("navbar-initial-margin-top")) - navbar_margin + "px"
 			});
 		}
+	});
+
+	$("#navbar-padding-bottom").css({
+	    'height': $(window).height() + all_anchors.last().offset().top - $("#navbar-padding-bottom").offset().top
 	});
 }
 
