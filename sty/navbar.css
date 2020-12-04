@@ -1,11 +1,12 @@
-#navbar {
+#content-navbar {
 	position: fixed;
 	z-index: 10;
 	height: 30px;
 	transition: height .5s;
 	background-color: rgba(1.,1.,1.,0.5);
 	width: 100%;
-	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: hidden;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
 	white-space: nowrap;
@@ -14,11 +15,19 @@
 	backdrop-filter: saturate(140%) blur(10px);
 }
 
-#navbar::-webkit-scrollbar {
+#content-navbar::-webkit-scrollbar {
   display: none;
 }
 
-#navbar a {
+#content-navbar ul,
+#content-navbar ul li {
+    display: inline;
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content-navbar a {
 	overflow:hidden;
 	color: black;
 	transition: line-height .5s;
@@ -27,12 +36,40 @@
 	text-decoration: none;
 }
 
+* > .navbar-share-anchor {
+    display: none;
+    float:right;
+    background:none;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    color: #999999;
+    font-size: 15px;
+    border: none;
+    outline:none;
+
+}
+
+.navbar-share-anchor:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar-share-anchor:hover {
+    display: block;
+    color: #777799;
+}
+
+*:hover > .navbar-share-anchor {
+    display: block;
+}
+
 @media only screen and (max-width: 700px) {
-	#navbar {
+	#content-navbar {
 		height: 60px;
 	}
 	
-	#navbar a {
+	#content-navbar a {
 		line-height: 60px;
 	}
 	
@@ -41,11 +78,13 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
-	#navbar {
-		background-color: rgba(0,0,0,0.5);
-	}
-	#navbar a {
-		color: white;
-	}
+@media not print {
+    [data-theme="dark"] #content-navbar {
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    [data-theme="dark"] #content-navbar a {
+        color: white;
+    }
 }
+

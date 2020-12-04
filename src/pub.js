@@ -36,11 +36,5 @@ function refine_pub(){
             var prev_item_year = parseInt(pub_item.getAttribute("year"));
         }
     }
-	
-	var a_items = document.getElementsByTagName("a");
-	for (i = 0; i < a_items.length; i++) {
-		var item = a_items[i];
-		item.setAttribute("target", "_blank");
-	}
 }
 $( document ).ready(function(){refine_pub();});

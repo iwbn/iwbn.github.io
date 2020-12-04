@@ -6,6 +6,8 @@
     <meta name="author" content="Woobin Im">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="src/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="src/main.js"></script>
     <script src="src/pub.js"></script>
     <script src="src/navbar.js"></script>
 
@@ -19,9 +21,9 @@
     <title>Woobin Im</title>
 </head>
 <body>
-<nav id="navbar" class="not-on-print">
+<nav id="content-navbar">
+    <!--automatically filled-->
 </nav>
-
 <div class="namecard-wrapper">
     <header class="namecard">
         <button onclick="window.print()" class="button-print">🖨️</button>
@@ -42,7 +44,8 @@
             </a></p>
         <p><a href="https://sgvr.kaist.ac.kr">SGVR Lab.</a></p>
         <address>
-            email: <a href="mailto:iwbn@kaist.ac.kr">iwbn@kaist.ac.kr</a>
+            email: <a href="mailto:iwbn@kaist.ac.kr">iwbn@kaist.ac.kr</a><br>
+            github: <a href="https://github.com/iwbn">https://github.com/iwbn</a><br>
             <div class="only-on-print">
                 website: <a href="https://iwbn.github.io/">https://iwbn.github.io/</a>
             </div>
@@ -50,7 +53,10 @@
         <p>Research interest: computer vision, deep learning, optical flow, and video analysis.</p>
     </header>
 </div>
-
+<div class="utility-bar">
+    <form id="radiobutton-theme" class="not-on-print"></form>
+    <a href="javascript:window.print()" class="a-no-blank not-on-print"><i class="fas fa-print"></i></a>
+</div>
 <main>
     <section>
         <h3 class="navbar-anchor">Section 1</h3>
@@ -410,6 +416,86 @@
                 </ul>
             </li>
         </ul>
+        <h3 class="navbar-anchor">Experiences</h3>
+        <ul>
+            <li>Teaching Assistants
+                <ul>
+                    <li>GSAG-KAIST Research and Education Program, 1/2019-2/2019</li>
+                    <li>CS206: Data Structure (Spring 2019), 3/2019-6/2019</li>
+                    <li>CS688: Web-Scale Image Retrieval (Fall 2018), 9/2018-12/2018</li>
+                    <li>CS101: Introduction to Programming, 9/2016-12/2017, 9/2018-12/2018</li>
+                </ul>
+            </li>
+            <li>Undergraduate Research Assistant
+                <ul>
+                    <li>DB Lab, Yonsei University, 1/2014-2/2014</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="navbar-anchor">Experiences</h3>
+        <ul>
+            <li>Teaching Assistants
+                <ul>
+                    <li>GSAG-KAIST Research and Education Program, 1/2019-2/2019</li>
+                    <li>CS206: Data Structure (Spring 2019), 3/2019-6/2019</li>
+                    <li>CS688: Web-Scale Image Retrieval (Fall 2018), 9/2018-12/2018</li>
+                    <li>CS101: Introduction to Programming, 9/2016-12/2017, 9/2018-12/2018</li>
+                </ul>
+            </li>
+            <li>Undergraduate Research Assistant
+                <ul>
+                    <li>DB Lab, Yonsei University, 1/2014-2/2014</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="navbar-anchor">Experiences</h3>
+        <ul>
+            <li>Teaching Assistants
+                <ul>
+                    <li>GSAG-KAIST Research and Education Program, 1/2019-2/2019</li>
+                    <li>CS206: Data Structure (Spring 2019), 3/2019-6/2019</li>
+                    <li>CS688: Web-Scale Image Retrieval (Fall 2018), 9/2018-12/2018</li>
+                    <li>CS101: Introduction to Programming, 9/2016-12/2017, 9/2018-12/2018</li>
+                </ul>
+            </li>
+            <li>Undergraduate Research Assistant
+                <ul>
+                    <li>DB Lab, Yonsei University, 1/2014-2/2014</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="navbar-anchor">Experiences5</h3>
+        <ul>
+            <li>Teaching Assistants
+                <ul>
+                    <li>GSAG-KAIST Research and Education Program, 1/2019-2/2019</li>
+                    <li>CS206: Data Structure (Spring 2019), 3/2019-6/2019</li>
+                    <li>CS688: Web-Scale Image Retrieval (Fall 2018), 9/2018-12/2018</li>
+                    <li>CS101: Introduction to Programming, 9/2016-12/2017, 9/2018-12/2018</li>
+                </ul>
+            </li>
+            <li>Undergraduate Research Assistant
+                <ul>
+                    <li>DB Lab, Yonsei University, 1/2014-2/2014</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="navbar-anchor">Experiences6</h3>
+        <ul>
+            <li>Teaching Assistants
+                <ul>
+                    <li>GSAG-KAIST Research and Education Program, 1/2019-2/2019</li>
+                    <li>CS206: Data Structure (Spring 2019), 3/2019-6/2019</li>
+                    <li>CS688: Web-Scale Image Retrieval (Fall 2018), 9/2018-12/2018</li>
+                    <li>CS101: Introduction to Programming, 9/2016-12/2017, 9/2018-12/2018</li>
+                </ul>
+            </li>
+            <li>Undergraduate Research Assistant
+                <ul>
+                    <li>DB Lab, Yonsei University, 1/2014-2/2014</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
     <section class="pub-author-info-list">
@@ -433,7 +519,7 @@
 </main>
 <footer>
     <p class="not-on-print">
-        Template made by <a href="https://iwbn.github.io">Woobin Im</a>
+        Template made by <a href="https://iwbn.github.io" class="a-no-blank">Woobin Im</a>
     </p>
     <p class="not-on-print">
         Source available at <a href="https://github.com/iwbn/iwbn.github.io">Github</a>
