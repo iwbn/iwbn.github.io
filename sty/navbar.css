@@ -90,7 +90,12 @@
 
 @media not print {
     [data-theme="dark"] #content-navbar {
-    background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    [data-theme="dark"] .navbar-notification {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
     }
 
     [data-theme="dark"] #content-navbar a {
