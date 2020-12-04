@@ -77,6 +77,16 @@ function refine_navbar(){
 	});
 }
 
+function refine_noti(){
+    $(".navbar-notification").each(function (i,v){
+        var noti = $(v);
+        noti.css({
+            "top": $(window).height() / 2 - noti.outerHeight(true) / 2,
+            "left": $(window).width() / 2 - noti.outerWidth(true) / 2,
+        })
+    });
+}
+
 
 $( document ).ready(function(){
 	define_navbar();
@@ -112,13 +122,19 @@ $( document ).ready(function(){
 
         document.body.removeChild(target_tag);
 
-        /* Alert the copied text */
-        alert("URL copied: " + target_tag.value);
+        var noti = $('<div class="navbar-notification"></div>');
+        noti.html("Copied to clipboard");
+
+        $("body").append(noti);
+        refine_noti();
+        noti.css("display", "none");
+        noti.fadeIn(500).delay(1000).fadeOut(500);
 	});
 });
 
 $( window ).resize(function() {
 	refine_navbar();
+	refine_noti();
 });
 
 var isScrolling;
