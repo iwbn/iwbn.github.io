@@ -68,6 +68,44 @@ header.namecard h6  {
 	text-align: center;
 }
 
+.utility-bar {
+    text-align:center;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.utility-bar > * {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999999;
+}
+#radiobutton-theme {
+    display: inline;
+}
+#radiobutton-theme input,
+#radiobutton-theme label
+{
+    display: none;
+}
+
+label[for=prefer-color-dark] {
+    transition: color 1s;
+    color: #ffd400;
+}
+
+label[for=prefer-color-dark]:hover {
+    color: #999999;
+}
+
+label[for=prefer-color-light] {
+    transition: color 1s;
+    color: #999999;
+}
+
+label[for=prefer-color-light]:hover {
+    color: #ffd400;
+}
+
 header.namecard p {
     margin-bottom: 5px;
     text-align: center;
@@ -103,21 +141,26 @@ header.namecard a {
 	display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-	html, body {
-		background-color: black;
-		color: white;
-	}
-	
-	.namecard-wrapper {
-		background: rgb(161,89,33);
-		background: -moz-linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
-		background: -webkit-linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
-		background: linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a15921",endColorstr="#141770",GradientType=1);
-	}
-	
-	a {
-		color: #79baff;
-	}
+@media not print {
+    [data-theme="dark"] html,
+    [data-theme="dark"] body {
+        background-color: black;
+        color: white;
+    }
+
+    [data-theme="dark"] .namecard-wrapper {
+        background: rgb(161,89,33);
+        background: -moz-linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
+        background: linear-gradient(0deg, rgba(161,89,33,1) 0%, rgba(20,23,112,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a15921",endColorstr="#141770",GradientType=1);
+    }
+
+    [data-theme="dark"] .utility-bar > * {
+        color: #DDDDDD;
+    }
+
+    [data-theme="dark"] a {
+        color: #79baff;
+    }
 }

@@ -96,3 +96,7 @@ header.namecard a {
 .print-dont-break {
 	break-inside: avoid;
 }
+
+#navbar-padding-bottom {
+    display: none;
+}
