@@ -1,0 +1,84 @@
+html, body { margin:0; padding:0; font-family: "Times New Roman", serif; font-size: 19px;}
+body { background-color: #F4F4F4; }
+a {color:#6799FF; text-decoration:none;}
+a:hover {color:#003399; text-decoration:underline;}
+
+#wrap {
+    position:relative;
+    margin: 5px auto;
+    padding: 2em;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    background-color: white;
+    border: 1px solid darkgrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+#paper-title {}
+
+#paper-links { margin-top: -0.8em; }
+
+#conf-header {
+    margin:-2em -2em 0 -2em;
+    min-height:2em;
+}
+
+#conf-header .conf-title {
+    margin:0;
+    line-height:2em;
+}
+
+#conf-header .conf-logo {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+#kaist-cs-logo-footer {
+    position:absolute;
+    right:0;
+    bottom:0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#authors {
+    margin-top:1.5em;
+    margin-bottom:0;
+}
+
+.author {
+    margin: 0px 0.5em;
+}
+
+#institute {
+    margin-top:0.5em;
+    margin-bottom:0;
+}
+
+figure {
+    text-align:center;
+    margin: 1em auto;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align:justify;
+    color: darkblue;
+}
+
+section {
+    padding-top:3em;
+    text-align:justify;
+}
+
+#abstract {
+    max-width:640px;
+    margin:0 auto;
+}
