@@ -1,9 +1,8 @@
-var defaultThemeControl = $(`
-    <input type="radio" id="prefer-color-dark" name="prefer-color-scheme" value="dark">
-    <label for="prefer-color-dark"><i class="fas fa-moon"></i></label>
-    <input type="radio" id="prefer-color-light" name="prefer-color-scheme" value="light">
-    <label for="prefer-color-light"><i class="fas fa-moon"></i></label>
-`);
+var defaultThemeControl = $(''+
+    '<input type="radio" id="prefer-color-dark" name="prefer-color-scheme" value="dark">'+
+    '<label for="prefer-color-dark"><i class="fas fa-moon"></i></label>'+
+    '<input type="radio" id="prefer-color-light" name="prefer-color-scheme" value="light">'+
+    '<label for="prefer-color-light"><i class="fas fa-moon"></i></label>');
 
 //https://stackoverflow.com/questions/56300132/how-to-override-css-prefers-color-scheme-setting
 //determines if the user has a set theme
