@@ -128,7 +128,7 @@ $( document ).ready(function(){
         $("body").append(noti);
         refine_noti();
         noti.css("display", "none");
-        noti.fadeIn(500).delay(1000).fadeOut(500);
+        noti.fadeIn(500).delay(1000).fadeOut(500, function(){$(this).remove();});
 	});
 });
 
