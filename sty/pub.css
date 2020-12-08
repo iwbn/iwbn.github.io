@@ -38,8 +38,8 @@
 	display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-	.pub-item {
+@media not print {
+	[data-theme="dark"] .pub-item {
 		border-left-color: #ff9d24;
 	}
 }
