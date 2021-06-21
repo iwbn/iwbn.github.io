@@ -8,17 +8,17 @@
     <script src="src/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="src/main.js"></script>
-    <script src="src/pub.js"></script>
+	<script src="src/pub.js"></script>
     <script src="src/navbar.js"></script>
-
+	<script src="src/ready.js"></script>
+	<script src="src/print.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="sty/bootstrap.min.css">
     <link rel="stylesheet" href="sty/main.css">
     <link rel="stylesheet" href="sty/pub.css">
     <link rel="stylesheet" href="sty/navbar.css">
-    <link rel="stylesheet" media="print" href="sty/print.css">
-
-	<title>Woobin Im</title>
+    <link rel="stylesheet" media="print", href="sty/print.css">
+    <title>Woobin Im</title>
 </head>
 <body>
 <nav id="content-navbar" class="not-on-print">
@@ -326,6 +326,7 @@ Lab website renovation, Dec 2019 (<a href="https://sgvr.kaist.ac.kr">sgvr.kaist.
 </ul>
 </section>
 
+
 <section class="pub-author-info-list">
 <h3>Co-author list</h3>
 <ul>
@@ -345,7 +346,7 @@ Lab website renovation, Dec 2019 (<a href="https://sgvr.kaist.ac.kr">sgvr.kaist.
 </ul>
 </section>
 </main>
-<footer>
+<footer class="not-on-print">
 <p class="not-on-print">
 Template made by <a href="https://iwbn.github.io" class="a-no-blank">Woobin Im</a>
 </p>
