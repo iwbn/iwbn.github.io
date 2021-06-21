@@ -68,17 +68,7 @@ function switchTheme(e) {
     detectColorScheme();
 }
 
-$( document ).ready(function(){
-    const toggleSwitch = $("#radiobutton-theme");
 
-
-    toggleSwitch.append(defaultThemeControl);
-    detectColorScheme();
-
-    toggleSwitch.click(switchTheme);
-    var a_items = $('a:not(.a-no-blank)');
-    a_items.attr("target", "_blank");
-});
 
 
 

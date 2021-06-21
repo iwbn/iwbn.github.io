@@ -1,5 +1,7 @@
 function refine_pub(){
+	var pub_items = document.getElementsByClassName("pub-item");
 	var author_info_list = document.getElementsByClassName("pub-author-info-list")[0].children[1].children;
+	
 	var author_infos = [];
 	for (i = 0; i < author_info_list.length; i++) {
 		var item = author_info_list[i];
@@ -24,7 +26,7 @@ function refine_pub(){
         }
     }
 
-    var pub_items = document.getElementsByClassName("pub-item");
+    
     var prev_item_year = -1;
     for (i = 0; i < pub_items.length; i++) {
         var pub_item = pub_items[i];
@@ -37,4 +39,3 @@ function refine_pub(){
         }
     }
 }
-$( document ).ready(function(){refine_pub();});

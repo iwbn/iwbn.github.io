@@ -1,10 +1,36 @@
+
+@media print{
+    @page {
+		size: A4;
+		@bottom-left-corner {
+			content: counter(page);
+		}
+    }
+	@page {
+		margin-top: 30mm;
+		margin-bottom: 30mm;
+		margin-left: 30mm;
+		margin-right: 30mm;
+		padding:0;
+	}
+    .chapter{
+        break-before: right;
+    }
+	@page {
+	  
+	}
+}
+
+body {
+	margin-left:auto;
+	margin-right:auto;
+}
+
 html, body, main, div {
 	font-family: "Times New Roman", serif;
 }
 
-body {
-	padding: 25mm 25mm 25mm 25mm;
-}
+
 
 nav {
 	position: relative !important;
@@ -14,6 +40,20 @@ nav {
 	display: table !important;
 	overflow: visible !important;
 	height: auto !important;
+}
+
+a {
+	color: inherit;
+}
+
+section {
+	padding:0;
+}
+
+section h3 {
+	padding-top: 0 !important;
+	margin-top: 30px !important;
+	border-bottom: 1px solid grey;
 }
 
 nav a {
@@ -35,11 +75,14 @@ nav a {
 	background: none;
 }
 
+
 header.namecard {
+	padding:0 !important;
 	background: none;
 	color: black;
 	border-style: solid;
 	border-width: 0 0 1px 0;
+	text-shadow: none;
 	width:none;
 	max-width: 800px;
 	margin: 0em auto 1em auto;
@@ -99,4 +142,12 @@ header.namecard a {
 
 #navbar-padding-bottom {
     display: none;
+}
+
+.pub-item {
+	border-left: none;
+	list-style-type: inherit;
+    margin-bottom: 1em;
+    padding-left: 0em;
+	margin-left: 1em;
 }
