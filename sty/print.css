@@ -21,6 +21,10 @@
 	}
 }
 
+h2, h3, h4 {
+	page-break-after: avoid;
+}
+
 body {
 	margin-left:auto;
 	margin-right:auto;
