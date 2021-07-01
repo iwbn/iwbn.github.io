@@ -26,8 +26,18 @@ section {
     padding: 20px;
 }
 
-p {
+p {	
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
     text-align: justify;
+	hyphens: auto;
+}
+
+li {
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	text-align: justify;
+	hyphens: auto;
 }
 
 .namecard-wrapper {
