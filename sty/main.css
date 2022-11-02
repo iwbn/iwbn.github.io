@@ -124,8 +124,27 @@ header.namecard address {
     text-align: center;
 }
 
+
+header.namecard address i {
+width: 1.3em;
+}
+
 header.namecard a {
     color: rgb(225,235,255);
+}
+
+span.career-year {
+	display: inline-block;
+	float: right;
+}
+
+@media only screen and (max-width: 700px) {
+	span.career-year {
+		float: inherit;
+	}
+	span.career-affiliation::after {
+		content: ", ";
+	}
 }
 
 #profile-img {
