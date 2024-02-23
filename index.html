@@ -16,7 +16,10 @@
 	<meta name="author" content="Woobin Im">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="src/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/436a39317a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<script src="src/main.js"></script>
 	<script src="src/pub.js"></script>
 	<script src="src/navbar.js"></script>
@@ -38,17 +41,21 @@
 
 <div class="namecard-wrapper">
 	<header class="namecard">
+		<div class="namecard-header">
 		<img id="profile-img" src="img/profile2.jpg" class="not-on-print" alt="profile image" width="300" height="300">
 		<h1>Woobin Im</h1>
-		
+		<span class="only-on-print">🇰🇷 임우빈</span>
 		<p>Ph.D. candidate<br>
 		<a href="https://sgvr.kaist.ac.kr">SGVR Lab</a> @ <a href="https://www.kaist.ac.kr">KAIST</a></p>
-		<p>Research interest: computer vision, optical flow estimation</p>
+		</div>
+		
 		<address>
             <p><i class="fas fa-envelope"></i> <a href="mailto:iwbn@kaist.ac.kr">iwbn@kaist.ac.kr</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/iwbn">https://github.com/iwbn</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="www.linkedin.com/in/woobin-im">linkedin.com/in/woobin-im</a></p>
+			<p><i class="fa-brands fa-google-scholar"></i><a href="https://scholar.google.com/citations?user=4O2V_I8AAAAJ">4O2V_I8AAAAJ</a></p></p>
+			<p><i class="fab fa-github"></i> <a href="https://github.com/iwbn">github.com/iwbn</a></p>
 		<div class="only-on-print">
-		    <p><i class="fas fa-home"></i> <a href="https://iwbn.github.io/">https://iwbn.github.io/</a></p>
+		    <p><i class="fas fa-home"></i> <a href="https://iwbn.github.io/">iwbn.github.io/</a></p>
 		</div>
 		</address>
 	</header>
@@ -422,9 +429,15 @@ I am especially interested in <b>motion</b>, so I have been working on video-rel
 <section>
 <h3 class="navbar-anchor">Patent</h3>
 <ul>
-<li>Using Triplet-based Loss for Training Ordinal Classification Deep Models
-<a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019231105&tab=PCTBIBLIO">[detail]</a></li>
-<li>Partial Face Based Person Identification Across Poses <a href="https://koasas.kaist.ac.kr/handle/10203/255782">[detail]</a></li>
+<li>트리플릿 기반의 손실함수를 활용한 순서가 있는 분류문제를 위한 딥러닝 모델 학습 방법 및 장치 (Using Triplet-based Loss for Training Ordinal Classification Deep Models) <br>
+<a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019231105&tab=PCTBIBLIO">[US App]</a> 
+<a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019231105&tab=PCTBIBLIO">[KR App]</a></li>
+<li>부분 이미지 기반 객체 판별 방법 및 장치 (Partial Face Based Person Identification Across Poses) <br> 
+	<a href="https://koasas.kaist.ac.kr/handle/10203/255782">[KR]</a></li>
+<li>도메인 적응 기반 객체 인식 모델 제공 장치 및 방법 (APPARATUS AND METHOD FOR PROVIDING OBJECT RECOGNITION MODEL BASED ON DOMAIN ADAPTATION) <br> 
+	[KR App]</li>
+<li>광학 흐름 추정을 위한 딥 유사도 기반 비지도 학습의 컴퓨터 시스템 및 그의 방법 (COMPUTER SYSTEM OF UNSUPERVISED LEARNING WITH DEEP SIMILARITY FOR OPTICAL FLOW ESTIMATION AND METHOD THEREOF) <br> 
+	<a href="https://patents.google.com/patent/KR102544800B1">[KR]</a> <a href="https://patents.google.com/patent/US20220366669A1/en">[US App]</a></li>
 </ul>
 
 <h3 class="navbar-anchor">Experience</h3>

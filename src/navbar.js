@@ -19,7 +19,7 @@ function define_navbar(){
 	
 	$("body").first().prepend(top_elem);
 	
-	navbar_ul.append($('<li><a href="#navbar-top">🏠</a></li>'));
+	navbar_ul.append($('<li><a href="#navbar-top"><i class="fa-solid fa-house"></i></a></li>'));
 	
 	all_anchors.each(function (i, v) {
 		if ($(v).parent().css('display') != 'none') {

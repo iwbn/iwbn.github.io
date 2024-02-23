@@ -38,7 +38,7 @@ body {
 }
 
 html, body, main, div {
-	font-family: "Times New Roman", "Nanum Myeongjo", serif;
+	font-family: "Noto Sans KR", sans-serif;
 }
 
 
@@ -125,13 +125,19 @@ header.namecard p {
 }
 
 header.namecard address {
+	margin: 0;
 	margin-top: 4px;
     text-align: justify;
 	display: block;
-	position: absolute;
-	right:0;
-	top: 0;
+	position: relative;
+	float:right;
 	font-style: normal;
+	background-color: none;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+    padding: 0;
+    border-radius: 0;
+	overflow: visible;
 }
 
 

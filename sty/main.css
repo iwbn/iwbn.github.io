@@ -1,3 +1,7 @@
+html, body, main, div {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
 
 main {
     max-width: 800px;
@@ -114,16 +118,41 @@ label[for=prefer-color-light] {
 label[for=prefer-color-light]:hover {
     color: #ffd400;
 }
+header.namecard {
+    display: block;
+    overflow: hidden;
+}
 
-header.namecard p {
-    margin-bottom: 5px;
-    text-align: center;
+header.namecard .namecard-header {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+header.namecard img {
+    margin-top: 100px;
+    display: block;
+    float: left;
 }
 
 header.namecard address {
     text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(1.,1.,1.,0.5);
+	-webkit-backdrop-filter: saturate(140%) blur(10px);
+	backdrop-filter: saturate(140%) blur(10px);
+    padding: 1.4em;
+    margin: 1em;
+    border-radius: 1.4em;
 }
 
+header.namecard address p {
+    margin-bottom: 5px;
+    text-align: left;
+}
 
 header.namecard address i {
 width: 1.3em;
@@ -145,6 +174,13 @@ span.career-year {
 	span.career-affiliation::after {
 		content: ", ";
 	}
+
+    header.namecard address {
+        text-align: center;
+        display: block;
+        position: relative;
+        clear: both;
+    }
 }
 
 #profile-img {
