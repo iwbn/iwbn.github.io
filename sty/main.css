@@ -181,6 +181,22 @@ span.career-year {
         position: relative;
         clear: both;
     }
+
+    header.namecard .namecard-header {
+        width: 100%;
+    }
+
+    header.namecard img {
+        margin-top: 50px;
+        display: block;
+        float: none;
+    }
+
+    header.namecard p {
+        margin-bottom: 1em;
+        text-align: center;
+        display: block;
+    }
 }
 
 #profile-img {
