@@ -38,6 +38,10 @@
 	display: none;
 }
 
+.pub-star::after {
+    content: '*'
+}
+
 @media not print {
 	[data-theme="dark"] .pub-item {
 		border-left-color: #ff9d24;
