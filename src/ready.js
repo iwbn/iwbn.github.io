@@ -72,7 +72,7 @@ function scroll_navbar(){
 
     var head = $("header").first();
     if (head.length && $(window).scrollTop() < head.offset().top){
-        $("#content-navbar").css("top", head.offset().top - $(window).scrollTop());
+        $("#content-navbar").css("top", head.offset().top);
     }
     else {
         $("#content-navbar").css("top", 0);
